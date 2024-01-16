@@ -1,0 +1,52 @@
+.autocomplete {
+  width: 50rem;
+  border-bottom: 2px solid black;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.2rem;
+}
+
+.autocomplete:focus {
+  outline: 1px solid black;
+}
+
+.autocomplete:focus-visible {
+  outline: none;
+  border-color: blue;
+}
+
+.autocomplete input {
+  outline: none;
+  border: none;
+  flex: 1;
+}
+
+.menu {
+  position: fixed;
+  min-width: 10rem;
+  max-height: 15rem;
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-start;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  filter: brightness(0.9);
+}
