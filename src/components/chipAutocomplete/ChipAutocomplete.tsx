@@ -61,8 +61,6 @@ const ChipAutocomplete = ({ data, renderChip }: IProps) => {
   // --------------------------------------------------------------------------------- //
 
   function handleOnInputBlur() {
-    console.log("calling blur");
-
     setShowMenu(false);
     setValue("");
   }
